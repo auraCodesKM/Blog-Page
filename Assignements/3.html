@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogster</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('r3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Navigation bar styling */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #f0e68c; /* Gold color for nav links */
+            font-size: 1.5em;
+        }
+
+        nav a:hover {
+            color: #ffffff; /* Change color on hover */
+        }
+
+        /* Main content area */
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Blog post styling */
+        article {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 45%;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        /* Aside section for recent posts */
+        aside {
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        aside h3 {
+            text-align: center;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin: 10px 0;
+            text-align: center;
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+
+        aside ul li a {
+            color: #f0e68c; /* Gold color for recent posts links */
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        aside ul li a:hover {
+            color: #ffffff; /* Change to white on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        aside ul li:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+            border-radius: 5px; /* Rounded corners on hover */
+        }
+
+        /* About the author section */
+        .author-bio {
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .author-bio:hover {
+            transform: scale(1.1);
+        }
+
+        /* Image styling */
+        img {
+            height: 300px;
+            width: 400px;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+            article {
+                width: 90%;
+            }
+            aside {
+                width: 90%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blogster</h1>
+        <nav>
+            <a href="https://www.google.com" target="_blank">Home</a>
+            <a href="https://www.apple.com" target="_blank">About</a>
+            <a href="https://www.amazon.com" target="_blank">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Golden Gate Bridge at Twilight</h2>
+            <img src="r1.jpg" alt="Golden Gate Bridge">
+            <p>This is the most photogenic moment for the Golden Gate Bridge, as the sun sets beneath the horizon. The bridge becomes bathed in the warm, golden glow of the sunset, creating a stunning silhouette against the twilight sky. Fog rolls in from the Pacific Ocean, creating an eerie and beautiful mystery over this already breathtaking scene.</p>
+        </article>
+        <article>
+            <h2>Chasing the Aurora</h2>
+            <img class="img" src="r5.jpg" alt="Aurora">
+            <p>This wonderful photograph captures the fleeting aurora dancing over the night sky. A tiny human figure stands on the beach, diminished against this celestial splendor. The hues of greenish color shades of the aurora set up fantastic contrast against the inky black color of the sky full of twinkling stars.</p>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">Exploring the Grand Canyon</a></li>
+            <li><a href="#">The Wonders of the Northern Lights</a></li>
+            <li><a href="#">Tips for Night Photography</a></li>
+            <li><a href="#">The Beauty of Cherry Blossoms</a></li>
+        </ul>
+    </aside>
+
+    <div class="author-bio">
+        <h3>About the Author</h3>
+        <p>Kavin is a passionate blogger and computer science student. He loves exploring new technologies and sharing his knowledge through engaging content. In his spare time, he enjoys photography, movies, and spending time with friends.</p>
+    </div>
+</body>
+</html>
